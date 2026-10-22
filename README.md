@@ -27,3 +27,10 @@ credited, with its licence, on the credits page:
 https://ijaz529.github.io/cricket-cards-site/credits.html
 
 Those images remain under their original licences. Nothing in this repository grants any other licence.
+
+## Older app builds
+
+App builds up to iOS 1.1.6 / Android versionCode 37 request images from Supabase's resize endpoint
+(`/storage/v1/render/image/public/cricket-players/<object>?width=...`). `storage/v1/render/image/public/` holds a
+static copy for them at 384 px wide (the query string is ignored): `headshots/` and `photos/` are the `-384`
+variants, and the card art is resized to 384 px wide.
